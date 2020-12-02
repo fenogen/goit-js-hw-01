@@ -34,7 +34,7 @@ message.toLowerCase() === Aust || message.toLowerCase() === Ind || message.toLow
     switch (message.toLowerCase()) {
         case Chin:
             price = '100';
-            message = Chin; // не понятно как сделать заглавную большую, можно только регистр
+            message = Chin; // ------  не понятно как сделать заглавную большую, можно только регистр
             break;
         case Chil:
             price = '250';
@@ -59,4 +59,4 @@ message.toLowerCase() === Aust || message.toLowerCase() === Ind || message.toLow
 alert('В вашей стране доставка не доступна');
 }
 
-// console.log(`Доставка в ${message} будет стоить ${price} кредитов`);
+
