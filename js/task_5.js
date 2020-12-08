@@ -21,20 +21,22 @@ const Chil = 'чили';
 const Aust = 'австралия';
 const Ind = 'индия';
 const Yam = 'ямайка';
-// const normMassege = message.toLowerCase()    - -- - - Не получается присвоитть!
 
 message = prompt('Укажите страну доставки');
+// let normMassege = message.toLowerCase();   //----------> В консоле выдает ошибку!
+
+console.log(normMassege);
 if (message === null) {
     console.log('Отмена')
 }
 
 else if (message.toLowerCase() === Chin || message.toLowerCase() === Chil ||
-message.toLowerCase() === Aust || message.toLowerCase() === Ind || message.toLowerCase() === Yam){
+message.toLowerCase() === Aust || message.toLowerCase()  === Ind || nmessage.toLowerCase()  === Yam){
     
     switch (message.toLowerCase()) {
         case Chin:
             price = '100';
-            message = Chin; // ------  не понятно как сделать заглавную большую, можно только регистр
+            message = Chin; // ------>  не понятно как сделать заглавную большую, можно только регистр!
             break;
         case Chil:
             price = '250';
@@ -58,5 +60,7 @@ message.toLowerCase() === Aust || message.toLowerCase() === Ind || message.toLow
  else {
 alert('В вашей стране доставка не доступна');
 }
+
+
 
 

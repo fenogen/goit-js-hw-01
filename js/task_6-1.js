@@ -8,29 +8,21 @@
 // let input;
 // let total = 0;
 
-
 let input;
 let total = 0;
 
-do {
-    input = prompt('Введите целое число');
-    if (input === null) {
-        alert(`Общая сумма ${total}`);
-        break;
-    }
-    if (input >= 1) {
-        input = Number(input);
-        total += input;
-        console.log(`Общая сумма ${total}`);
-        continue;
-    }
+input = prompt('Введите целое число');
 
-     if (input = Number.isNaN(input)) {
-        console.log('Было введено не число, попробуйте еще раз');
-        break;
-        input = prompt('Введите целое число');
-        // break;
-    }
-        input = confirm('Введите новое целое число');  // Как запустить повторно окно? в чем всетаки разнице между do..while , while
+while (input !== null) {
+  if (isNaN(input)) {
+    alert("You wrote not a number");
+    total = 0;                              //---------> обнуляет сумму при некорректном вводе числа
+  } else {
+   
+    total += Number(input);
+  }
+  input = prompt('Введите целое число');
+  
+}
 
-} while (true);
+console.log(`Общая сумма ${total}`);
